@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form enctype="multipart/form-data" method="get" >
+    <label>Имя файла:</label><input type="text" name="filename">
+    <button type="submit" name="load" value="1">загрузить</button> <br><br>
+    <button type="submit" name="erase" value="2">Очистить</button>
+    <br><br>
+     <label>Какое слово ищем?</label><input type="text" name="search">
+     <button type="submit" name="find" value="3">Search</button> <br><br>
+</form>
+
+Слово встречается {{ number }} раз <br><br>
+{{ word_list }}
+</body>
+</html>
